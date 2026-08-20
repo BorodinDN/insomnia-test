@@ -12,10 +12,43 @@ collection:
     meta:
       id: req_eabbaaab65464cfd89735f3ba64d65dd
       created: 1787225594707
-      modified: 1787225600842
+      modified: 1787225833232
       isPrivate: false
       description: ""
       sortKey: -1787225594707
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "signalId": "sig-12345",
+          "source": "podd",
+          "payload": {
+            "transactionId": "txn-9876",
+            "amount": 1500.50,
+            "currency": "RUB"
+          }
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: ""
+    name: New Request
+    meta:
+      id: req_b45263c3daed40f6bacae6117fb67a03
+      created: 1787225801838
+      modified: 1787225801838
+      isPrivate: false
+      description: ""
+      sortKey: -1787225801838
     method: GET
     settings:
       renderRequestBody: true
